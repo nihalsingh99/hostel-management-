@@ -19,7 +19,7 @@ window.close();
 }
 function f3()
 {
-window.print(); 
+window.print();
 }
 </script>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -33,7 +33,7 @@ window.print();
 
 <body>
 <table width="100%" border="0">
-<?php 
+<?php
 		 $ret= mysqli_query($con,"SELECT * FROM registration where emailid = '".$_GET['id']."'");
 			while($row=mysqli_fetch_array($ret))
 			{
@@ -44,7 +44,7 @@ window.print();
 			<tr>
 			  <td colspan="2" align="center" class="font1">&nbsp;</td>
   </tr>
-			
+
 			<tr>
 			  <td colspan="2"  class="font"><?php echo ucfirst($row['firstName']);?> <?php echo ucfirst($row['lastName']);?>'S <span class="font1"> information &raquo;</span> </td>
   </tr>
@@ -59,15 +59,15 @@ window.print();
 			  <td colspan="2"  class="font1"><table width="100%" border="0">
                 <tr>
                   <td width="32%" valign="top" class="heading">Room no : </td>
-                  
+
                       <td class="comb-value1"><span class="comb-value"><?php echo $row['roomno'];?></span></td>
                     </tr>
                   <tr>
                   <td width="22%" valign="top" class="heading">Seater : </td>
-                  
+
                       <td class="comb-value1"><span class="comb-value"><?php echo $row['seater'];?></span></td>
                     </tr>
-                  
+
                     <tr>
                     <td width="12%" valign="top" class="heading">Fees PM : </td>
                       <td class="comb-value1"><?php echo $fpm=$row['feespm'];?></td>
@@ -96,8 +96,8 @@ else
                     <td width="12%" valign="top" class="heading">Total Fee: </td>
                       <td class="comb-value1">
                       <?php if($row['foodstatus']==1)
-                      { 
-                        $fd=2000; 
+                      {
+                        $fd=2000;
                         echo (($dr*$fpm)+$fd);
                       }
                         else
@@ -219,23 +219,23 @@ else
 <?php } ?>
 
 
-                   
+
                   </table></td>
                 </tr>
-               
-					
+
+
                   </table></td>
                 </tr>
               </table></td>
   </tr>
-		
-           
- 
-	 
+
+
+
+
     </table></td>
   </tr>
 
-  
+
   <tr>
     <td colspan="2" align="right" ><form id="form1" name="form1" method="post" action="">
       <table width="100%" border="0" cellpadding="0" cellspacing="0">

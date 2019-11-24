@@ -22,16 +22,16 @@ ul.menu .topline {border-top:1px solid #aaa}
 .JT {
 	BORDER-RIGHT:#666666 1px solid;  Z-INDEX: 100; background-color:#DBDBDB; BORDER-LEFT:#666666 1px solid;
 }
-.JT1 { 
-	BORDER-LEFT:#666666 1px solid;  Z-INDEX: 100; BORDER-RIGHT:#666666 1px solid; 
+.JT1 {
+	BORDER-LEFT:#666666 1px solid;  Z-INDEX: 100; BORDER-RIGHT:#666666 1px solid;
 }
-.JT2 { 
-	BORDER-TOP:#666666 1px solid;  Z-INDEX: 100;  
+.JT2 {
+	BORDER-TOP:#666666 1px solid;  Z-INDEX: 100;
 }
 .note {
 	color: #FF0000;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
-	
+
 }
 a:hover {
 	color: #4779CB;
@@ -51,7 +51,7 @@ a:hover {
 	color:#000000;
 	padding-bottom:5px;
 	padding-top:5px;
-	padding-left:10px;  
+	padding-left:10px;
 	text-decoration: none;
 }
 .headingwithout {
@@ -61,11 +61,11 @@ a:hover {
 	color:#000000;
 	padding-bottom:3px;
 	padding-top:3px;
-	
+
 	text-decoration: none;
 }
-.JT3 { 
-	BORDER-TOP:#666666 1px dashed;  Z-INDEX: 100; 
+.JT3 {
+	BORDER-TOP:#666666 1px dashed;  Z-INDEX: 100;
 }
 
 .comb-value {
@@ -92,7 +92,7 @@ padding-top:0px;
 }
 .txtbox4 {
 
-	
+
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 11px;
 	color: #000000;
@@ -109,7 +109,7 @@ padding-top:0px;
 	font-size: 11px;
 	font-weight: bold;
 	color:#FF0000;
-	
+
 	text-decoration: none;
 }
 .price1{
@@ -117,18 +117,18 @@ padding-top:0px;
 	font-size: 11px;
 	font-weight: bold;
 	color:#FF2020;
-	
+
 	text-decoration:line-through;
 }
-.JT7 { 
-	BORDER-BOTTOM:#666666 1px dashed;  Z-INDEX: 100; 
+.JT7 {
+	BORDER-BOTTOM:#666666 1px dashed;  Z-INDEX: 100;
 }
 .comb-value3 {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 11px;
 	color: #000000;
 	text-decoration: none;
-	padding-bottom:3px; 
+	padding-bottom:3px;
 }
 
 .links2 {
@@ -136,7 +136,7 @@ padding-top:0px;
 	font-size: 12px;
 	color:#666666;
 	padding-bottom:3px;
-	padding-left:10px;  
+	padding-left:10px;
 	text-decoration: none;
 }
 .heading5{
@@ -144,7 +144,7 @@ padding-top:0px;
 	font-size: 20px;
 	color:#990000;
 	padding-bottom:5px;
-	padding-left:15px;  
+	padding-left:15px;
 	text-decoration: none;
 }
 .button1 {
@@ -158,14 +158,14 @@ padding-top:0px;
 	padding-top:2px;
 	font-family:Verdana, Arial, Helvetica, sans-serif;
 	font-size:11px; color:#666666 ;
-	
+
 }
 .comb-value3 {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 12px;
 	color: #000000;
 	text-decoration: none;
-	
+
 }
 .background{ background-image:url(images/bar_02.gif); width:212px; background-repeat:repeat-y; height:36px;}
 .backgroundmid{ background-image:url(images/bar_05.gif); width:212px; background-repeat:repeat-y;}

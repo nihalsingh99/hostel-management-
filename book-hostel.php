@@ -95,7 +95,7 @@ $('#fpm').val(data);
 
 				<div class="row">
 					<div class="col-md-12">
-					
+
 						<h2 class="page-title">Registration </h2>
 
 						<div class="row">
@@ -118,8 +118,8 @@ $uid=$_SESSION['login'];
 				<?php }
 				else{
 							echo "";
-							}			
-							?>			
+							}
+							?>
 <div class="form-group">
 <label class="col-sm-4 control-label"><h4 style="color: green" align="left">Room Related info </h4> </label>
 </div>
@@ -127,7 +127,7 @@ $uid=$_SESSION['login'];
 <div class="form-group">
 <label class="col-sm-2 control-label">Room no. </label>
 <div class="col-sm-8">
-<select name="room" id="room"class="form-control"  onChange="getSeater(this.value);" onBlur="checkAvailability()" required> 
+<select name="room" id="room"class="form-control"  onChange="getSeater(this.value);" onBlur="checkAvailability()" required>
 <option value="">Select Room</option>
 <?php $query ="SELECT * FROM rooms";
 $stmt2 = $mysqli->prepare($query);
@@ -138,12 +138,12 @@ while($row=$res->fetch_object())
 ?>
 <option value="<?php echo $row->room_no;?>"> <?php echo $row->room_no;?></option>
 <?php } ?>
-</select> 
+</select>
 <span id="room-availability-status" style="font-size:12px;"></span>
 
 </div>
 </div>
-											
+
 <div class="form-group">
 <label class="col-sm-2 control-label">Seater</label>
 <div class="col-sm-8">
@@ -164,7 +164,7 @@ while($row=$res->fetch_object())
 <input type="radio" value="0" name="foodstatus" checked="checked"> Without Food
 <input type="radio" value="1" name="foodstatus"> With Food(Rs 2000.00 Per Month Extra)
 </div>
-</div>	
+</div>
 
 <div class="form-group">
 <label class="col-sm-2 control-label">Stay From</label>
@@ -208,7 +208,7 @@ while($row=$res->fetch_object())
 <div class="form-group">
 <label class="col-sm-2 control-label">course </label>
 <div class="col-sm-8">
-<select name="course" id="course" class="form-control" required> 
+<select name="course" id="course" class="form-control" required>
 <option value="">Select Course</option>
 <?php $query ="SELECT * FROM courses";
 $stmt2 = $mysqli->prepare($query);
@@ -222,7 +222,7 @@ while($row=$res->fetch_object())
 </select> </div>
 </div>
 
-<?php	
+<?php
 $aid=$_SESSION['id'];
 	$ret="select * from userregistration where id=?";
 		$stmt= $mysqli->prepare($ret) ;
@@ -311,7 +311,7 @@ $aid=$_SESSION['id'];
 <div class="col-sm-8">
 <input type="text" name="gcontact" id="gcontact"  class="form-control" required="required">
 </div>
-</div>	
+</div>
 
 <div class="form-group">
 <label class="col-sm-3 control-label"><h4 style="color: green" align="left">Correspondense Address </h4> </label>
@@ -330,12 +330,12 @@ $aid=$_SESSION['id'];
 <div class="col-sm-8">
 <input type="text" name="city" id="city"  class="form-control" required="required">
 </div>
-</div>	
+</div>
 
 <div class="form-group">
 <label class="col-sm-2 control-label">State </label>
 <div class="col-sm-8">
-<select name="state" id="state"class="form-control" required> 
+<select name="state" id="state"class="form-control" required>
 <option value="">Select State</option>
 <?php $query ="SELECT * FROM states";
 $stmt2 = $mysqli->prepare($query);
@@ -347,14 +347,14 @@ while($row=$res->fetch_object())
 <option value="<?php echo $row->State;?>"><?php echo $row->State;?></option>
 <?php } ?>
 </select> </div>
-</div>							
+</div>
 
 <div class="form-group">
 <label class="col-sm-2 control-label">Pincode : </label>
 <div class="col-sm-8">
 <input type="text" name="pincode" id="pincode"  class="form-control" required="required">
 </div>
-</div>	
+</div>
 
 <div class="form-group">
 <label class="col-sm-3 control-label"><h4 style="color: green" align="left">Permanent Address </h4> </label>
@@ -381,12 +381,12 @@ while($row=$res->fetch_object())
 <div class="col-sm-8">
 <input type="text" name="pcity" id="pcity"  class="form-control" required="required">
 </div>
-</div>	
+</div>
 
 <div class="form-group">
 <label class="col-sm-2 control-label">State </label>
 <div class="col-sm-8">
-<select name="pstate" id="pstate"class="form-control" required> 
+<select name="pstate" id="pstate"class="form-control" required>
 <option value="">Select State</option>
 <?php $query ="SELECT * FROM states";
 $stmt2 = $mysqli->prepare($query);
@@ -398,14 +398,14 @@ while($row=$res->fetch_object())
 <option value="<?php echo $row->State;?>"><?php echo $row->State;?></option>
 <?php } ?>
 </select> </div>
-</div>							
+</div>
 
 <div class="form-group">
 <label class="col-sm-2 control-label">Pincode : </label>
 <div class="col-sm-8">
 <input type="text" name="ppincode" id="ppincode"  class="form-control" required="required">
 </div>
-</div>	
+</div>
 
 
 <div class="col-sm-6 col-sm-offset-4">
@@ -422,7 +422,7 @@ while($row=$res->fetch_object())
 							</div>
 						</div>
 					</div>
-				</div> 	
+				</div>
 			</div>
 		</div>
 	</div>
@@ -444,8 +444,8 @@ while($row=$res->fetch_object())
                 $('#pcity').val( $('#city').val() );
                 $('#pstate').val( $('#state').val() );
                 $('#ppincode').val( $('#pincode').val() );
-            } 
-            
+            }
+
         });
     });
 </script>
@@ -479,7 +479,7 @@ $(document).ready(function() {
 	    $('.result').val(data);
 		}
 		});
-		
+
 
 })});
 </script>

@@ -24,7 +24,7 @@ else{
 }
 }
 
-if(!empty($_POST["oldpassword"])) 
+if(!empty($_POST["oldpassword"]))
 {
 $pass=$_POST["oldpassword"];
 $result ="SELECT password FROM userregistration WHERE password=?";
@@ -34,13 +34,13 @@ $stmt->execute();
 $stmt -> bind_result($result);
 $stmt -> fetch();
 $opass=$result;
-if($opass==$pass) 
+if($opass==$pass)
 echo "<span style='color:green'> Password  matched .</span>";
 else echo "<span style='color:red'> Password Not matched</span>";
 }
 
 
-if(!empty($_POST["roomno"])) 
+if(!empty($_POST["roomno"]))
 {
 $roomno=$_POST["roomno"];
 $result ="SELECT count(*) FROM registration WHERE roomno=?";

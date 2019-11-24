@@ -62,7 +62,7 @@ check_login();
 										</tr>
 									</tfoot>
 									<tbody>
-<?php	
+<?php
 $aid=$_SESSION['id'];
 $ret="select * from userlog where userId=?";
 $stmt= $mysqli->prepare($ret) ;
@@ -84,20 +84,20 @@ while($row=$res->fetch_object())
 									<?php
 $cnt=$cnt+1;
 									 } ?>
-											
-										
+
+
 									</tbody>
 								</table>
 
-								
+
 							</div>
 						</div>
 
-					
+
 					</div>
 				</div>
 
-			
+
 
 			</div>
 		</div>

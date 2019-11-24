@@ -62,7 +62,7 @@ return true;
 
 				<div class="row">
 					<div class="col-md-12">
-					
+
 						<h2 class="page-title">Student Registration </h2>
 
 						<div class="row">
@@ -71,8 +71,8 @@ return true;
 									<div class="panel-heading">Fill all Info</div>
 									<div class="panel-body">
 			<form method="post" action="" name="registration" class="form-horizontal" onSubmit="return valid();">
-											
-										
+
+
 
 <div class="form-group">
 <label class="col-sm-2 control-label"> Registration No : </label>
@@ -145,7 +145,7 @@ return true;
 <input type="password" name="cpassword" id="cpassword"  class="form-control" required="required">
 </div>
 </div>
-						
+
 
 
 
@@ -163,7 +163,7 @@ return true;
 							</div>
 						</div>
 					</div>
-				</div> 	
+				</div>
 			</div>
 		</div>
 	</div>

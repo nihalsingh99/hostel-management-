@@ -1,7 +1,7 @@
 <?php
 include('includes/pdoconfig.php');
-if(!empty($_POST["roomid"])) 
-{	
+if(!empty($_POST["roomid"]))
+{
 $id=$_POST['roomid'];
 $stmt = $DB_con->prepare("SELECT * FROM rooms WHERE room_no = :id");
 $stmt->execute(array(':id' => $id));
@@ -17,8 +17,8 @@ $stmt->execute(array(':id' => $id));
 
 
 
-if(!empty($_POST["rid"])) 
-{	
+if(!empty($_POST["rid"]))
+{
 $id=$_POST['rid'];
 $stmt = $DB_con->prepare("SELECT * FROM rooms WHERE room_no = :id");
 $stmt->execute(array(':id' => $id));

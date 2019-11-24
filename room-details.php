@@ -52,10 +52,10 @@ popUpWin = open(URLStr,'popUpWin', 'toolbar=no,location=no,directories=no,status
 							<div class="panel-heading">All Room Details</div>
 							<div class="panel-body">
 								<table id="zctb" class="table table-bordered " cellspacing="0" width="100%">
-									
-									
+
+
 									<tbody>
-<?php	
+<?php
 $aid=$_SESSION['login'];
 	$ret="select * from registration where emailid=?";
 $stmt= $mysqli->prepare($ret) ;
@@ -105,10 +105,10 @@ echo "With Food";
 </tr>
 
 <tr>
-<td colspan="6"><b>Total Fee : 
+<td colspan="6"><b>Total Fee :
 <?php if($row->foodstatus==1)
-{ 
-$fd=2000; 
+{
+$fd=2000;
 echo (($dr*$fpm)+$fd);
 }
 else
@@ -171,7 +171,7 @@ echo $dr*$fpm;
 <td colspan="2">
 <?php echo $row->pmntAddress;?><br />
 <?php echo $row->pmntCity;?>, <?php echo $row->pmntPincode;?><br />
-<?php echo $row->pmnatetState;?>	
+<?php echo $row->pmnatetState;?>
 
 </td>
 </tr>

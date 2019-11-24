@@ -63,7 +63,7 @@ return true;
 		<?php include('includes/sidebar.php');?>
 		<div class="content-wrapper">
 			<div class="container-fluid">
-	<?php	
+	<?php
 $aid=$_SESSION['id'];
 	$ret="select * from userregistration where id=?";
 		$stmt= $mysqli->prepare($ret) ;
@@ -73,7 +73,7 @@ $aid=$_SESSION['id'];
 	 //$cnt=1;
 	   while($row=$res->fetch_object())
 	  {
-	  	?>	
+	  	?>
 				<div class="row">
 					<div class="col-md-12">
 						<h2 class="page-title"><?php echo $row->firstName;?>'s&nbsp;Profile </h2>
@@ -83,14 +83,14 @@ $aid=$_SESSION['id'];
 								<div class="panel panel-primary">
 									<div class="panel-heading">
 
-Last Updation date : &nbsp; <?php echo $row->updationDate;?> 
+Last Updation date : &nbsp; <?php echo $row->updationDate;?>
 </div>
-									
+
 
 <div class="panel-body">
 <form method="post" action="" name="registration" class="form-horizontal" onSubmit="return valid();">
-								
-								
+
+
 
 <div class="form-group">
 <label class="col-sm-2 control-label"> Registration No : </label>
@@ -151,7 +151,7 @@ Last Updation date : &nbsp; <?php echo $row->updationDate;?>
 </div>
 <?php } ?>
 
-						
+
 
 
 
@@ -169,7 +169,7 @@ Last Updation date : &nbsp; <?php echo $row->updationDate;?>
 							</div>
 						</div>
 					</div>
-				</div> 	
+				</div>
 			</div>
 		</div>
 	</div>
@@ -191,8 +191,8 @@ Last Updation date : &nbsp; <?php echo $row->updationDate;?>
                 $('#pcity').val( $('#city').val() );
                 $('#pstate').val( $('#state').val() );
                 $('#ppincode').val( $('#pincode').val() );
-            } 
-            
+            }
+
         });
     });
 </script>

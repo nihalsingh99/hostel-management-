@@ -15,7 +15,7 @@ $udate=date('d-m-Y h:i:s', time());;
 	$chngpwd = $mysqli->prepare($sql);
 	$chngpwd->bind_param('s',$op);
 	$chngpwd->execute();
-	$chngpwd->store_result(); 
+	$chngpwd->store_result();
     $row_cnt=$chngpwd->num_rows;;
 	if($row_cnt>0)
 	{
@@ -28,8 +28,8 @@ $chngpwd1->bind_param('ssi',$np,$udate,$ai);
 	else
 	{
 		$_SESSION['msg']="Old Password not match !!";
-	}	
-	
+	}
+
 
 }
 ?>
@@ -77,11 +77,11 @@ return true;
 
 				<div class="row">
 					<div class="col-md-12">
-					
+
 						<h2 class="page-title">Change Password </h2>
-	
+
 						<div class="row">
-	
+
 								<div class="col-md-10">
 								<div class="panel panel-default">
 									<div class="panel-heading">
@@ -132,16 +132,16 @@ $stmt -> fetch(); ?>
 								</div>
 							</div>
 							</div>
-						
-									
-							
+
+
+
 
 							</div>
 						</div>
 
 					</div>
-				</div> 	
-				
+				</div>
+
 
 			</div>
 		</div>

@@ -12,7 +12,7 @@ $stmt=$mysqli->prepare("SELECT email,contactNo,password FROM userregistration WH
 				$rs=$stmt->fetch();
 				if($rs)
 				{
-				$pwd=$password;				
+				$pwd=$password;
 				}
 
 				else
@@ -43,7 +43,7 @@ $stmt=$mysqli->prepare("SELECT email,contactNo,password FROM userregistration WH
 	<link rel="stylesheet" href="css/style.css">
 </head
 <body>
-	
+
 	<div class="login-page bk-img" style="background-image: url(img/login-bg.jpg);">
 		<div class="form-content">
 			<div class="container">
@@ -61,7 +61,7 @@ $stmt=$mysqli->prepare("SELECT email,contactNo,password FROM userregistration WH
 									<input type="email" placeholder="Email" name="email" class="form-control mb">
 									<label for="" class="text-uppercase text-sm">Your Contact no</label>
 									<input type="text" placeholder="Contact no" name="contact" class="form-control mb">
-									
+
 
 									<input type="submit" name="login" class="btn btn-primary btn-block" value="login" >
 								</form>
